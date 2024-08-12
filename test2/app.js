@@ -4,12 +4,18 @@
 angular.module('ControllerAsApp', [])
 .controller('Controller', Controller);
 
-Controller.$inject = ['$scope', '$filter'];
-function Controller($scope, $filter) {
-    $scope.popup = "";
+Controller.$inject = ['$scope'];
+function Controller($scope) {
+    $scope.D1Click = function () {
+        alert("Dummy1 PopUp Successful")
+    };
 
-    $scope.DClick = function () {
-        popup.classList.toggle("show");
+    $scope.D2Click = function () {
+        alert("Dummy2 PopUp Successful")
+    };
+
+    $scope.D3Click = function () {
+        alert("Dummy3 PopUp Successful")
     };
 }
 
