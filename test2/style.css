@@ -3,10 +3,12 @@ body{
     color: #081E32;
     background-color: #D8F0FA;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 #header-nav{
     background-color: #a9e0ff;
+    position: relative;
     border-radius: 0;
     border: 0;
 }
@@ -35,6 +37,54 @@ body{
 #nav-list{
     margin-top: 15px;
 } 
+
+
+.row{
+    width: 100%;
+}
+
+.container{
+   position: relative;
+   top:60px;
+   margin: 15px; 
+}
+  
+.item{
+    position: relative;
+    top: 0;
+    background-color:#999999;
+    margin: 15px;
+    padding: 25px;
+    border: 3px solid #000;
+}
+  
+.item p{
+    margin-top: 18px;
+    text-align: justify;
+    font-size:100%;
+}
+  
+.item-title{
+    position: absolute;
+    top:0;
+    right: 0px;
+    background: green; 
+    padding: 6px 90px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+  
+#title-one {
+    background-color: #D59898;
+} 
+  
+#title-two{
+    background-color: #C14543;
+}
+  
+#title-three{
+    background-color: #E5D198;
+}
 
 .panel-footer{
     margin-top: 30px;
