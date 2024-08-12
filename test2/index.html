@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='ControllerAsApp'>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DummyTitle</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,7 +16,7 @@
             <div class="container">
                 <div class="navbar-header">
                     <div class="navbar-title">
-                        <a href="index.html"><h1>Software Application</h1></a>
+                        <a href="index.html"><h1>Software Name?</h1></a>
                     </div>
                     <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
                         <span class="sr-only">Toggle Navigation</span>
@@ -23,16 +25,22 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-                <div class="collapse navbar-collapse" id="collapsable-nav">
+                <div class="collapse navbar-collapse" id="collapsable-nav" ng-controller='Controller'>
                     <ul class="nav navbar-nav navbar-right" id="nav-list">
-                        <li id="navHomeButton">
-                            <a href="#" onclick=""> Dummy1</a>
+                        <li class="popup" id="navHomeButton">
+                            <a href="#" ng-click="DClick"> Dummy1
+                                <span class="popuptext" id="myPopup">Dummy1 PopUp Success</span>
+                            </a>
                         </li>
-                        <li id="navHomeButton">
-                            <a href="#" onclick=""> Dummy2</a>
+                        <li class="popup" id="navHomeButton">
+                            <a href="#" ng-click="DClick"> Dummy2
+                                <span class="popuptext" id="myPopup">Dummy2 PopUp Success</span>
+                            </a>
                         </li>
-                        <li id="navHomeButton">
-                            <a href="#" onclick=""> Dummy3</a>
+                        <li class="popup" id="navHomeButton">
+                            <a href="#" ng-click="DClick"> Dummy3
+                                <span class="popuptext" id="myPopup">Dummy3 PopUp Success</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -41,7 +49,7 @@
     </header>
 
     <footer class="panel-footer">
-        <div style="text-align: center; color: #D8F0FA;">&copy; DummyCompany</div>
+        <div style="text-align: center; color: #D8F0FA;">&copy; DigiHub</div>
     </footer>
 </body>
 </html>
