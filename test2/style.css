@@ -60,18 +60,19 @@ body{
   
 .item p{
     margin-top: 18px;
+    position: relative;
     text-align: justify;
     font-size:100%;
 }
   
 .item-title{
-    position: absolute;
+    position: relative;
+    text-align: center;
     top:0;
     right: 0px;
-    background: green; 
+    background: #081E32; 
     padding: 6px 90px;
-    border-left: 2px solid #000;
-    border-bottom: 2px solid #000;
+    border: 2px solid black;
 }
   
 #title-one {
