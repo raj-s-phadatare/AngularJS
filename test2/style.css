@@ -7,15 +7,13 @@ body{
 
 #header-nav{
     background-color: #a9e0ff;
-    margin-top: 30px;
-    padding-top: 35px;
-    padding-bottom: 30px;
     border-radius: 0;
     border: 0;
 }
 
 .navbar-title{
-    padding-top: 25px;
+    padding-top: 30px;
+    margin-bottom: 30px;
 }
 
 .navbar-title h1{
