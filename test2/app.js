@@ -8,7 +8,7 @@ Controller.$inject = ['$scope', '$filter'];
 function Controller($scope, $filter) {
 
     function DClick() {
-        var popup = document.getElementById("myPopup");
+        var popup = $myPopup
         popup.classList.toggle("show");
     }
     
