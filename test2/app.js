@@ -6,18 +6,17 @@ angular.module('ControllerAsApp', [])
 
 Controller.$inject = ['$scope'];
 function Controller($scope) {
-    $scope.D1Click = function () {
+    $scope.d1Click = function () {
         alert("Dummy1 PopUp Successful")
     };
 
-    $scope.D2Click = function () {
+    $scope.d2Click = function () {
         alert("Dummy2 PopUp Successful")
     };
 
-    $scope.D3Click = function () {
+    $scope.d3Click = function () {
         alert("Dummy3 PopUp Successful")
     };
 }
-
 
 })();
