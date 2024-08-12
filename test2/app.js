@@ -7,11 +7,10 @@ angular.module('ControllerAsApp', [])
 Controller.$inject = ['$scope', '$filter'];
 function Controller($scope, $filter) {
 
-    function DClick() {
-        var popup = $myPopup
+    $scope.DClick = function () {
+        $scope.popup = "";
         popup.classList.toggle("show");
-    }
-    
+    };
 }
 
 
