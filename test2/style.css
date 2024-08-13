@@ -44,7 +44,6 @@ body{
 }
   
 .item{
-    display: none;
     position: relative;
     top: 0;
     background-color:#D4D4D4;
@@ -60,12 +59,12 @@ body{
     display: none;
 }
 
-.item-title:hover{
+.item:hover{
     transform: scale(1.1);
     z-index: 9;
 }
 
-.item-title:hover .hide-element .item{
+.item:hover .hide-element{
     display: block;
 }
   
