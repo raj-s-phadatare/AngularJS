@@ -60,7 +60,7 @@ body{
     display: none;
 }
 
-.item:hover + .hide{
+.item:hover .hide{
     display: block;
     transform: scale(1.2);
     z-index: 9;
