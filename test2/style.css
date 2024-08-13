@@ -56,11 +56,11 @@ body{
     transition: transform 0.3s ease-in-out;
 }
 
-.hide{
+.hide-element{
     display: none;
 }
 
-.item:hover .hide{
+.item:hover .hide-element{
     display: block;
     transform: scale(1.2);
     z-index: 9;
