@@ -38,14 +38,10 @@ body{
     margin-top: 15px;
 } 
 
-.row{
-    width: 100%;
-}
-
 .container-new{
    position: relative;
    top:60px;
-   margin: 15px; 
+   margin: 40px; 
 }
   
 .item{
