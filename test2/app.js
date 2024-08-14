@@ -6,32 +6,21 @@ angular.module('ControllerAsApp', [])
 
 Controller.$inject = ['$scope'];
 function Controller($scope) {
+    $scope.dD1 = false;
+    $scope.dD2 = false;
+    $scope.dD3 = false;
+
     $scope.d1Click = function () {
-        $scope.dD1.classList.toggle("show");
+        $scope.dD1 = $scope.dD1 ? false : true;
     };
 
     $scope.d2Click = function () {
-        $scope.dD2.classList.toggle("show");
+        $scope.dD2 = $scope.dD2 ? false : true;
     };
 
     $scope.d3Click = function () {
-        $scope.dD3.classList.toggle("show");
+        $scope.dD3 = $scope.dD3 ? false : true;
     };
-
-    window.onclick = function (e) {
-        if(!e.target.matches('.dropdown'))
-        {
-            if ($scope.dD1.classList.contains('show')) {
-                $scope.dD1.remove('show');
-            }
-            else if ($scope.dD2.classList.contains('show')) {
-                $scope.dD2.remove('show');
-            }
-            else if ($scope.dD3.classList.contains('show')) {
-                $scope.dD3.remove('show');
-            }
-        }
-    }
 }
 
 })();
