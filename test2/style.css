@@ -45,8 +45,17 @@ body{
     z-index: 1;
 }
 
+.dropdown{
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
 .dropdown-content p{
     margin-top: 18px;
+    margin-left: 50px;
+    margin-bottom: 30 px;
     color: #081E32;
     position: relative;
     text-align: justify;
