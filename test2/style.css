@@ -38,11 +38,22 @@ body{
     margin-top: 15px;
 } 
 
-.drop-element{
+.dropdown-content{
     display: none;
+    position: absolute;
+    background-color: #a9e0ff;
+    z-index: 1;
 }
 
-.show-menu .drop-element{
+.dropdown-content p{
+    margin-top: 18px;
+    color: #081E32;
+    position: relative;
+    text-align: justify;
+    font-size:100%;
+}
+
+.show{
     display: block;
 }
 
@@ -74,13 +85,6 @@ body{
 
 .item:hover .hide-element{
     display: block;
-}
-
-.drop-element{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    position: relative;
-    background-color: #a9e0ff;
 }
   
 .item .hide-element{
