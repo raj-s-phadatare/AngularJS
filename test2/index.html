@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body ng-controller='Controller'>
     <header>
         <nav id="header-nav" class="navbar navbar-default">
             <div class="container">
@@ -25,7 +25,7 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-                <div class="collapse navbar-collapse" id="collapsable-nav" ng-controller='Controller'>
+                <div class="collapse navbar-collapse" id="collapsable-nav">
                     <ul class="nav navbar-nav navbar-right" id="nav-list">
                         <li id="navHomeButton">
                             <div class="dropdown">
@@ -43,29 +43,30 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="dropdown-content" nd-model="myDropdown">
-                        <div class="dropdown-content1 col-lg-4" nd-model="dD1">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.
-                            </p>
-                        </div>
-    
-                        <div class="dropdown-content2 col-lg-4" nd-model="dD2">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.
-                            </p>
-                        </div>
-    
-                        <div class="dropdown-content3 col-lg-4" nd-model="dD3">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </nav>
     </header>
+
+    <div class="dropdown-content" nd-model="myDropdown">
+        <div class="dropdown-content1 col-lg-4" nd-model="dD1">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.
+            </p>
+        </div>
+
+        <div class="dropdown-content2 col-lg-4" nd-model="dD2">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.
+            </p>
+        </div>
+
+        <div class="dropdown-content3 col-lg-4" nd-model="dD3">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.
+            </p>
+        </div>
+    </div>
 
     <div class="container-new">
         <div class="row">
