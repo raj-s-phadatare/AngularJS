@@ -38,6 +38,14 @@ body{
     margin-top: 15px;
 } 
 
+.drop-element{
+    display: none;
+}
+
+.show-menu .drop-element{
+    display: block;
+}
+
 .container-new{
    position: relative;
    margin: 40px; 
@@ -66,6 +74,13 @@ body{
 
 .item:hover .hide-element{
     display: block;
+}
+
+.drop-element{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    background-color: #a9e0ff;
 }
   
 .item .hide-element{
