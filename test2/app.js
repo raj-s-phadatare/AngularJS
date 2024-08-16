@@ -27,6 +27,12 @@ function Controller($scope) {
         $scope.dD1 = false;
         $scope.dD3 = $scope.dD3 ? false : true;
     };
+
+    $scope.bodyClick = function () {
+        $scope.dD1 = false;
+        $scope.dD2 = false;
+        $scope.dD3 = false;
+    }
 }
 
 })();
