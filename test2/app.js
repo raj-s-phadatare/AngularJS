@@ -4,8 +4,8 @@
 angular.module('ControllerAsApp', [])
 .controller('Controller', Controller);
 
-Controller.$inject = ['$scope', '$document'];
-function Controller($scope, $document) {
+Controller.$inject = ['$scope'];
+function Controller($scope) {
     $scope.dD1 = false;
     $scope.dD2 = false;
     $scope.dD3 = false;
@@ -28,15 +28,6 @@ function Controller($scope, $document) {
         $scope.dD3 = $scope.dD3 ? false : true;
     };
 
-    $document.on('click', function() {
-        $scope.$apply(function() {
-            $scope.isDropdownOpen = false;
-        });
-    });
-
-    $scope.$on('$destroy', function() {
-        $document.off('click');
-    });
 }
 
 })();
