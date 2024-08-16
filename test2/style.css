@@ -86,6 +86,11 @@ body{
     margin: 20px;
     border-radius: 10px;
 }
+
+.userRow{
+    margin-left: 15px;
+    margin-right: 15px;
+}
   
 .item{
     position: relative;
