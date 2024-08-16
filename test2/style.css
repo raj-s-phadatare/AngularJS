@@ -69,13 +69,14 @@ body{
     font-size:100%;
 }
 
-.show{
-    display: block;
-}
-
 .container-new{
    position: relative;
    margin: 40px; 
+}
+
+.userContainer{
+    position: relative;
+    margin: 40px;
 }
   
 .item{

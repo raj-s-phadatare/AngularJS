@@ -27,7 +27,6 @@ function Controller($scope) {
         $scope.dD1 = false;
         $scope.dD3 = $scope.dD3 ? false : true;
     };
-
 }
 
 })();
