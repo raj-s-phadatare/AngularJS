@@ -4,8 +4,8 @@
 angular.module('ControllerAsApp', [])
 .controller('Controller', Controller);
 
-Controller.$inject = ['$scope'];
-function Controller($scope) {
+Controller.$inject = ['$scope', '$document'];
+function Controller($scope, $document) {
     $scope.dD1 = false;
     $scope.dD2 = false;
     $scope.dD3 = false;
@@ -27,30 +27,16 @@ function Controller($scope) {
         $scope.dD1 = false;
         $scope.dD3 = $scope.dD3 ? false : true;
     };
+
+    $document.on('click', function() {
+        $scope.$apply(function() {
+            $scope.isDropdownOpen = false;
+        });
+    });
+
+    $scope.$on('$destroy', function() {
+        $document.off('click');
+    });
 }
-
-angular.module('ControllerAsApp', [])
-.directive('closeOnClickOutside', function($document) {
-    return {
-        restrict: 'A',
-        link: function(scope, element, attrs) {
-            function onClick(event) {
-                if (!element[0].contains(event.target) && !angular.element(event.target).hasClass('dropdown-toggle')) {
-                    scope.$apply(function() {
-                        scope.dD1 = false;
-                        scope.dD2 = false;
-                        scope.dD3 = false;
-                    });
-                }
-            }
-
-            $document.on('click', onClick);
-
-            scope.$on('$destroy', function() {
-                $document.off('click', onClick);
-            });
-        }
-    };
-});
 
 })();
