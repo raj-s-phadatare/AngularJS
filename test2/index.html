@@ -19,7 +19,7 @@
                         <a href="index.html"><h1>Software Name?</h1></a>
                     </div>
                 </div>
-                <div close-on-click>
+                <div>
                     <ul class="nav navbar-nav navbar-right" id="nav-list">
                         <li id="navHomeButton">
                             <div class="dropdown">
@@ -42,7 +42,7 @@
         </nav>
     </header>
 
-    <div class="dropdown-content">
+    <div class="dropdown-content" ng-blur="closeDropdown">
         <div class="dropdown-content1 col-lg-4" ng-show="dD1">
             <p>
                 The HTML markup consists of an HTML DIV and a Button. The HTML DIV has been assigned ng-show directive. The value of ng-show directive has been set using the variable IsVisible which is initially set to false and hence the HTML DIV is hidden when page loads.
