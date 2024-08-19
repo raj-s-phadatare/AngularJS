@@ -19,7 +19,7 @@ function Controller($scope) {
         $scope.dD1 = $scope.dD1 ? false : true;
         $scope.changeCaret2 = "caret";
         $scope.changeCaret3 = "caret";
-        if ($scope.dD1=true) {
+        if ($scope.dD1==true) {
             $scope.changeCaret1 = "caret-up";
         }
         else{
@@ -34,7 +34,7 @@ function Controller($scope) {
         $scope.dD2 = $scope.dD2 ? false : true;
         $scope.changeCaret1 = "caret";
         $scope.changeCaret3 = "caret";
-        if ($scope.dD2=true) {
+        if ($scope.dD2==true) {
             $scope.changeCaret2 = "caret-up";
         }
         else{
@@ -48,7 +48,7 @@ function Controller($scope) {
         $scope.dD3 = $scope.dD3 ? false : true;
         $scope.changeCaret2 = "caret";
         $scope.changeCaret1 = "caret";
-        if ($scope.dD3=true) {
+        if ($scope.dD3==true) {
             $scope.changeCaret3 = "caret-up";
         }
         else{
