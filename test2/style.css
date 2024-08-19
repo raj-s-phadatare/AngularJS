@@ -101,9 +101,7 @@ body{
 }
 
 .hide-element{
-    background: #fff;
     overflow: hidden;
-
     transition: all .5s ease-in-out;
     line-height: 0;
     padding: 0 1em;
@@ -114,11 +112,14 @@ body{
     transform: scale(1.1);
     z-index: 2;
 }
-  
-.item .hide-element{
+
+.item:hover .hide-element{
     line-height: 1.5;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+  
+.item .hide-element{
     margin-top: 18px;
     color: #081E32;
     position: relative;
