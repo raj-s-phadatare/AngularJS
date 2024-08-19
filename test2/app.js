@@ -19,7 +19,7 @@ function Controller($scope) {
         $scope.dD1 = $scope.dD1 ? false : true;
         $scope.changeCaret2 = "caret";
         $scope.changeCaret3 = "caret";
-        $scope.changeCaret1 = $scope.changeCaret1 ? "caret" : "caret-up";
+        $scope.changeCaret1 = $scope.changeCaret1 ? "caret-up" : "caret";
         
     };
 
@@ -29,7 +29,7 @@ function Controller($scope) {
         $scope.dD2 = $scope.dD2 ? false : true;
         $scope.changeCaret1 = "caret";
         $scope.changeCaret3 = "caret";
-        $scope.changeCaret2 = $scope.changeCaret2 ? "caret" : "caret-up";
+        $scope.changeCaret2 = $scope.changeCaret2 ? "caret-up" : "caret";
     };
 
     $scope.d3Click = function () {
@@ -38,7 +38,7 @@ function Controller($scope) {
         $scope.dD3 = $scope.dD3 ? false : true;
         $scope.changeCaret2 = "caret";
         $scope.changeCaret1 = "caret";
-        $scope.changeCaret3 = $scope.changeCaret3 ? "caret" : "caret-up";
+        $scope.changeCaret3 = $scope.changeCaret3 ? "caret-up" : "caret";
     };
 }
 
