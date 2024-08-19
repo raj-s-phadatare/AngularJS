@@ -104,22 +104,19 @@ body{
     display: none;
 }
 
-.item:hover{
-    transform: scale(1.1);
-    z-index: 9;
-}
-
 .item:hover .hide-element{
+    transform: scale(1.1);
+    z-index: 2;
     display: block;
 }
   
 .item .hide-element{
-    transition: transform 0.3s ease-in-out;
     margin-top: 18px;
     color: #081E32;
     position: relative;
     text-align: justify;
     font-size:100%;
+    transition: transform 0.3s ease-in-out;
 }
   
 .item-title{
