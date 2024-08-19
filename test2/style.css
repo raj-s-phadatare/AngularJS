@@ -120,6 +120,7 @@ body{
   
 .item .hide-element{
     color: #081E32;
+    margin: 0;
     position: relative;
     text-align: justify;
     font-size:100%;
