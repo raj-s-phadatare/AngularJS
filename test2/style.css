@@ -94,6 +94,10 @@ body{
     border-radius: 10px;
 }
 
+.listContainer li{
+    margin: 10px;
+}
+
 .listContainer li span{
     font-weight: bold;
 }
