@@ -109,10 +109,10 @@
                     <li>
                         RE Power Supply : 
                         <label class="switch">
-                            <input type="checkbox">
+                            <input type="checkbox" ng-checked="checkToggle">
                             <span class="slider round"></span>
                         </label>
-                        <span class="showResult"></span>
+                        <span class="showResult">{{checkedValue}}</span>
                     </li>
                     <li>
                         Electrolyzer vendor and Model : <input type="text" placeholder="User Input">

@@ -13,6 +13,8 @@ function Controller($scope) {
     $scope.changeCaret2 = "caret";
     $scope.changeCaret3 = "caret";
 
+    $scope.checkToggle = true ? $scope.checkedValue = "Yes" : $scope.checkedValue = "No"
+
     $scope.d1Click = function () {
         $scope.dD2 = false;
         $scope.dD3 = false;
@@ -20,7 +22,6 @@ function Controller($scope) {
         $scope.changeCaret2 = "caret";
         $scope.changeCaret3 = "caret";
         $scope.changeCaret1 = $scope.dD1 == true ? "caret-up" : "caret";
-        
     };
 
     $scope.d2Click = function () {
