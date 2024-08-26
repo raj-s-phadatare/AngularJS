@@ -12,8 +12,11 @@ function Controller($scope) {
     $scope.changeCaret1 = "caret";
     $scope.changeCaret2 = "caret";
     $scope.changeCaret3 = "caret";
+    $scope.isChecked = false;
 
-    $scope.checkToggle = true ? $scope.checkedValue = "Yes" : $scope.checkedValue = "No"
+    $scope.checkToggle = function () {
+        $scope.isChecked = $scope.isChecked ? $scope.checkedValue = "No" : $scope.checkedValue = "Yes"
+    }
 
     $scope.d1Click = function () {
         $scope.dD2 = false;
